@@ -201,10 +201,12 @@ void clientserver()
 void Tracking()
 {
 	Track cam;
+	int distance = 0;
 	do
 	{
-		cam.update();
+		distance = cam.update();
 		cam.draw();
+		std::cout << "distance: " << distance << std::endl;
 	} while (cv::waitKey(5) != ' ');
 	
 }
@@ -216,6 +218,4 @@ int main(int argc, char* argv[])
 	//do_video ();
   //clientserver();
 		Tracking();
-		
-
 }

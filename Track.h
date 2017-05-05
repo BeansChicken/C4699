@@ -36,11 +36,11 @@ private:
 	cv::Mat canvasR; //matrix for storing video capture images for red
 	cv::Mat canvasG; //matrix for storing video capture images for green
 	cv::Mat HSV;	//image after converting to HSV formate
-	cv::Mat mask;	//mask apply to the image
-	cv::Mat erode;	//image after erode
-	cv::Mat dilate; //image after dilate
 
-	cv::Rect r; //box drawn around the ball
+	//cv::Rect r; //box drawn around the ball
+
+	int distance = 0;
+	int height = 0;
 
 public:
 
@@ -56,11 +56,12 @@ public:
 	*/
 	~Track();
 
-	/** @brief Determine the colour seen on the webcam image.
-	* @param N/A
+	/** @brief Determine the colour and distance seen on the webcam image
+	* @param address of red distance (0 = red not seen)
+	* @param address of green distance (0 = green not seen)
 	* @return N/A
 	*/
-	void update();
+	int update(void);
 
 	/** @brief Display the processed image
 	* @param N/A
