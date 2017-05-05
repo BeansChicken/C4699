@@ -14,7 +14,7 @@
     <ProjectGuid>{A32E4181-E68B-4E83-B81B-652ECAE7491E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Lab_04_Template</RootNamespace>
-    <ProjectName>4618_Template</ProjectName>
+    <ProjectName>Car Project</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\opencv\include;.\opencv\include\opencv2;</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,9 +81,10 @@
     <ClInclude Include="Serial.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Track.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4618_Template.cpp" />
+    <ClCompile Include="Template.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Serial.cpp" />
     <ClCompile Include="server.cpp" />
@@ -91,6 +92,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Track.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

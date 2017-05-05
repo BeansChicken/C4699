@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (4618_Template.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Track.cpp
+c:\users\beans\sharefile\personal folders\bcit\term 4\elex 4699\cars\track.cpp(55): warning C4244: '=': conversion from 'int64' to 'double', possible loss of data
+c:\users\beans\sharefile\personal folders\bcit\term 4\elex 4699\cars\track.cpp(86): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\beans\sharefile\personal folders\bcit\term 4\elex 4699\cars\track.cpp(97): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\beans\sharefile\personal folders\bcit\term 4\elex 4699\cars\track.cpp(104): warning C4244: '=': conversion from 'int64' to 'double', possible loss of data
+  4618_Template.vcxproj -> C:\Users\Beans\ShareFile\Personal Folders\BCIT\Term 4\ELEX 4699\Cars\x64\Debug\Car Project.exe
+  4618_Template.vcxproj -> C:\Users\Beans\ShareFile\Personal Folders\BCIT\Term 4\ELEX 4699\Cars\x64\Debug\Car Project.pdb (Full PDB)
